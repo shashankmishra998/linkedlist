@@ -1,8 +1,8 @@
-package MAIN;
+package main;
 
-import javax.xml.soap.Node;
 
-public class node {
+
+public class Node {
     // commit Ctrl+k
     // push Ctrl+shift+k
      private int data;
@@ -12,15 +12,24 @@ public class node {
         return next;
     }
 
-    public node(int data) {
+    public Node(int data) {
         this.data = data;
     }
 
-    public node(Node next) {
+    public Node (Node next) {
         this.next = next;
     }
 
-    public node() {
+    public Node(int data, Node next)
+    {
+        this.data = data;
+        this.next = next;
+    }
+
+    public Node()
+    {this.data=0;
+    this.next=null;
+
     }
 
     public void setNext(Node next) {
